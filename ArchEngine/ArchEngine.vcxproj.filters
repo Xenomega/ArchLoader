@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="ArchEngine.cpp" />
+    <ClCompile Include="Generic.cpp">
+      <Filter>Helpers</Filter>
+    </ClCompile>
+    <ClCompile Include="Patches.cpp">
+      <Filter>Halo 4\Patches</Filter>
+    </ClCompile>
+    <ClCompile Include="Camera.cpp">
+      <Filter>Halo 4\Camera</Filter>
+    </ClCompile>
+    <ClCompile Include="HaloGame.cpp">
+      <Filter>Halo 4</Filter>
+    </ClCompile>
+    <ClCompile Include="ArchMenu.cpp">
+      <Filter>Halo 4\Menu</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Generic.h">
+      <Filter>Helpers</Filter>
+    </ClInclude>
+    <ClInclude Include="KernelExports.h">
+      <Filter>Helpers</Filter>
+    </ClInclude>
+    <ClInclude Include="Patches.h">
+      <Filter>Halo 4\Patches</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="assembly.h">
+      <Filter>Helpers</Filter>
+    </ClInclude>
+    <ClInclude Include="ArchConfig_Controller.h">
+      <Filter>Configuration</Filter>
+    </ClInclude>
+    <ClInclude Include="Camera.h">
+      <Filter>Halo 4\Camera</Filter>
+    </ClInclude>
+    <ClInclude Include="HaloGame.h">
+      <Filter>Halo 4</Filter>
+    </ClInclude>
+    <ClInclude Include="ArchConfig_std.h">
+      <Filter>Configuration</Filter>
+    </ClInclude>
+    <ClInclude Include="XamExports.h">
+      <Filter>Helpers</Filter>
+    </ClInclude>
+    <ClInclude Include="ArchMenu.h">
+      <Filter>Halo 4\Menu</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ArchEngine.def" />
+    <None Include="xex.xml" />
+    <None Include="readme.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Helpers">
+      <UniqueIdentifier>{7399aafa-cc8b-4c50-8ac6-1e1b2f1065e6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Halo 4">
+      <UniqueIdentifier>{3bb4e5a3-df69-4602-903b-bbbcf80149b1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Configuration">
+      <UniqueIdentifier>{6653ce99-03a7-4757-9208-b833dfcda905}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Halo 4\Patches">
+      <UniqueIdentifier>{9831cf25-32d6-4b74-b760-3d3e1342c21c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Halo 4\Camera">
+      <UniqueIdentifier>{9079a7a7-c7f5-4097-9909-cfb7f6540e94}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Halo 4\Menu">
+      <UniqueIdentifier>{2432407e-3eaf-434d-b640-d20217abddc1}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

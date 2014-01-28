@@ -1,0 +1,186 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="DEVELOPMENT|Win32">
+      <Configuration>DEVELOPMENT</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="DEVELOPMENT|Xbox 360">
+      <Configuration>DEVELOPMENT</Configuration>
+      <Platform>Xbox 360</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RETAIL|Win32">
+      <Configuration>RETAIL</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RETAIL|Xbox 360">
+      <Configuration>RETAIL</Configuration>
+      <Platform>Xbox 360</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{ECF00D1D-F68B-4566-8CC1-A40914D77FDC}</ProjectGuid>
+    <RootNamespace>ArchEngine</RootNamespace>
+    <Keyword>Xbox360Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RETAIL|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DEVELOPMENT|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RETAIL|Xbox 360'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfAtl>false</UseOfAtl>
+    <CharacterSet>MultiByte</CharacterSet>
+    <WholeProgramOptimization>false</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DEVELOPMENT|Xbox 360'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfAtl>false</UseOfAtl>
+    <CharacterSet>MultiByte</CharacterSet>
+    <WholeProgramOptimization>false</WholeProgramOptimization>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='RETAIL|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='DEVELOPMENT|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='RETAIL|Xbox 360'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='DEVELOPMENT|Xbox 360'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RETAIL|Xbox 360'">RETAIL\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='DEVELOPMENT|Xbox 360'">DEVELOPMENT\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RETAIL|Xbox 360'">RETAIL\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='DEVELOPMENT|Xbox 360'">DEVELOPMENT\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RETAIL|Xbox 360'">false</LinkIncremental>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='DEVELOPMENT|Xbox 360'">false</LinkIncremental>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='RETAIL|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='DEVELOPMENT|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='RETAIL|Win32'" />
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='DEVELOPMENT|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='RETAIL|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='DEVELOPMENT|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='RETAIL|Xbox 360'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='DEVELOPMENT|Xbox 360'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='RETAIL|Xbox 360'" />
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='DEVELOPMENT|Xbox 360'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='RETAIL|Xbox 360'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='DEVELOPMENT|Xbox 360'" />
+    <RemoteRoot Condition="'$(Configuration)|$(Platform)'=='DEVELOPMENT|Xbox 360'">DEVKIT:\Debug Games\halo4_14064.12.05.05.1011.beta\</RemoteRoot>
+    <RemoteRoot Condition="'$(Configuration)|$(Platform)'=='RETAIL|Xbox 360'">DEVKIT:\Debug Games\halo4_14064.12.05.05.1011.beta\</RemoteRoot>
+    <OutputFile Condition="'$(Configuration)|$(Platform)'=='DEVELOPMENT|Xbox 360'">$(OutDir)$(TargetName).dll</OutputFile>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RETAIL|Xbox 360'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <FavorSizeOrSpeed>Neither</FavorSizeOrSpeed>
+      <PreprocessorDefinitions>MDEBUG;_XBOX;</PreprocessorDefinitions>
+      <StringPooling>false</StringPooling>
+      <ExceptionHandling>false</ExceptionHandling>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <MinimalRebuild>true</MinimalRebuild>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+      <CallAttributedProfiling>Disabled</CallAttributedProfiling>
+    </ClCompile>
+    <Link>
+      <AdditionalOptions>/dll /ALIGN:128,4096  %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>xapilib.lib;d3d9ltcg.lib;d3dx9.lib;xgraphics.lib;xboxkrnl.lib;xnet.lib;xaudio2.lib;xact3ltcg.lib;x3daudioltcg.lib;xmcoreltcg.lib;vcomp.lib;xinput2.lib</AdditionalDependencies>
+      <ModuleDefinitionFile>ArchEngine.def</ModuleDefinitionFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(OutDir)$(ProjectName).pdb</ProgramDatabaseFile>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <SetChecksum>true</SetChecksum>
+    </Link>
+    <ImageXex>
+      <ConfigurationFile>xex.xml</ConfigurationFile>
+    </ImageXex>
+    <Deploy>
+      <DeploymentType>CopyToHardDrive</DeploymentType>
+      <ForceCopy>true</ForceCopy>
+    </Deploy>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DEVELOPMENT|Xbox 360'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <FavorSizeOrSpeed>Neither</FavorSizeOrSpeed>
+      <PreprocessorDefinitions>FDEBUG;_XBOX;</PreprocessorDefinitions>
+      <StringPooling>false</StringPooling>
+      <ExceptionHandling>false</ExceptionHandling>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <MinimalRebuild>true</MinimalRebuild>
+      <CallAttributedProfiling>Callcap</CallAttributedProfiling>
+      <PREfast>Disabled</PREfast>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+    </ClCompile>
+    <Link>
+      <AdditionalOptions>/dll /ALIGN:128,4096  %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>xapilib.lib;d3d9ltcg.lib;d3dx9.lib;xgraphics.lib;xboxkrnl.lib;xnet.lib;xaudio2.lib;xact3ltcg.lib;x3daudioltcg.lib;xmcoreltcg.lib;vcomp.lib;xinput2.lib;xbdm.lib</AdditionalDependencies>
+      <ModuleDefinitionFile>ArchEngine.def</ModuleDefinitionFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(OutDir)$(ProjectName).pdb</ProgramDatabaseFile>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <SetChecksum>true</SetChecksum>
+    </Link>
+    <ImageXex>
+      <ConfigurationFile>xex.xml</ConfigurationFile>
+    </ImageXex>
+    <Deploy>
+      <DeploymentType>CopyToHardDrive</DeploymentType>
+      <Progress>false</Progress>
+      <ForceCopy>true</ForceCopy>
+    </Deploy>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="ArchEngine.cpp" />
+    <ClCompile Include="ArchMenu.cpp" />
+    <ClCompile Include="Camera.cpp" />
+    <ClCompile Include="HaloGame.cpp" />
+    <ClCompile Include="Patches.cpp" />
+    <ClCompile Include="Generic.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ArchEngine.def" />
+    <None Include="readme.txt" />
+    <None Include="xex.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ArchConfig_std.h" />
+    <ClInclude Include="ArchConfig_Controller.h" />
+    <ClInclude Include="ArchMenu.h" />
+    <ClInclude Include="assembly.h" />
+    <ClInclude Include="Camera.h" />
+    <ClInclude Include="HaloGame.h" />
+    <ClInclude Include="Patches.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="Generic.h" />
+    <ClInclude Include="KernelExports.h" />
+    <ClInclude Include="XamExports.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
